@@ -1,0 +1,14 @@
+@layer utilities {
+  .btn {
+    @apply inline-block uppercase text-center transition
+           rounded-sm px-5 md:px-8 py-3 font-medium;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-hover;
+  }
+
+  .btn-sm { @apply px-4 py-2 text-sm; }
+  .btn-lg { @apply px-7 py-4 text-lg; }
+  .btn-xl { @apply px-8 py-4 text-xl; }
+}

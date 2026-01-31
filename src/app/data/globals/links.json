@@ -1,0 +1,55 @@
+{ 
+    "home":"/",
+    "planos":"planos-erp-webmais",
+    "blog":"blog",
+    "contato":"contato",
+    "sobre":"empresa",
+    "trabalhe":"trabalhe-conosco",
+    "lgpd": "termos",
+
+    "segmento": {
+      "distribuidoras":"erp-para-distribuidoras",
+      "industrias":"segmento-industria"
+    },
+
+    "funcionalidade": { 
+      "compras":"sistema-gestao-integrada/#compras",
+      "producao":"sistema-gestao-integrada/#producao",
+      "estoque":"sistema-gestao-integrada/#estoque",
+      "vendas":"sistema-gestao-integrada/#vendas",
+      "financeiro":"sistema-gestao-integrada/#financeiro",
+      "comercial":"sistema-gestao-integrada/#comercial",
+      "controladoria":"sistema-gestao-integrada/#controladoria",
+      "recursos":"sistema-gestao-integrada/#adm",
+      "integracoes":"erp-integrado"
+    },
+
+    "produto": {
+      "distribuidoras":"sistema-erp-distribuidora",
+      "industrias":"erp-para-industria",
+      "analytics":"business-intelligence-webmais-analytics",
+      "app":"app-forca-vendas",
+      "wms":"sistema-wms",
+      "nfe":"emissor-nota-fiscal-eletronica"
+    },
+
+    "parceiro": {
+      "maisParceiros":"parceiros",
+      "consultorParceiro":"consultores-parceiros"
+    },
+
+    "industria": {
+      "quimica":"erp-para-industria-quimica",
+      "cosmetico":"erp-para-industria-de-cosmeticos",
+      "alimento":"erp-para-industria-de-alimentos",
+      "bebida":"erp-para-industria-de-bebidas"
+    },
+
+    "distribuidora": {
+      "cosmetico":"erp-para-distribuidora-de-cosmeticos",
+      "alimento":"sistema-para-distribuidora-de-alimentos",
+      "bebida":"erp-para-distribuidora-bebidas",
+      "hospitalar":"erp-para-distribuidora-produto-medico-hospitalar"
+    }
+  
+}

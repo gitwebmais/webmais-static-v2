@@ -1,0 +1,47 @@
+<section class="py-28">
+  <div class="container">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-semibold text-center mb-10">Perguntas Frequentes</h2>
+      <div class="space-y-2">
+
+        {% for faq in faqs %}
+        <details class="group">
+
+          <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-lg bg-gray-100 px-5 py-8 font-medium hover:bg-primary hover:text-white">
+            <h3>{{ faq.pergunta }}</h3>
+            <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+
+          <div class="p-5">
+
+            {% for bloco in faq.resposta %}
+
+              {% if bloco.tipo == 'paragrafo' %}
+                <p class="mb-4">{{ bloco.texto }}</p>
+
+              {% elseif bloco.tipo == 'lista' %}
+                <ul class="mb-4 space-y-2">
+                  {% for item in bloco.itens %}
+                  <li>
+                    <svg id="" class="h-2 mr-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.15 6.49">
+                      <path d="M6.88.21c.3-.29.77-.27,1.06.03.27.29.28.73,0,1.02l-3.99,4.99c-.28.3-.76.32-1.06.04,0,0-.01-.01-.02-.02L.24,3.62c-.3-.28-.32-.76-.04-1.06s.76-.32,1.06-.04c.01.01.03.02.04.04l2.09,2.09L6.87.23l.02-.02Z" fill="#f2673c"/>
+                    </svg>
+                    {{ item }}
+                  </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+            {% endfor %}
+            
+          </div>
+
+        </details>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>

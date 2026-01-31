@@ -1,0 +1,43 @@
+[
+  {
+    "logo"  :"webmais-analytics",
+    "titulo":"BI WebMais Analytics",
+    "lista" : [
+      "Dashboards que facilitam decisões",
+      "Dados claros, sem planilhas",
+      "IA para leitura inteligente dos números",
+      "Integração com WhatsApp para agir rápido",
+      "Alertas automáticos antes do problema"
+    ],
+    "link"  :"analytics",
+    "botao" :"Conheça o BI",
+    "img"   :"bi-webmais-analytics"
+  },
+  {
+    "logo"  :"forca-de-vendas",
+    "titulo":"App Força de Vendas",
+    "lista" : [
+      "Menos erros nos pedidos",
+      "Estoque sempre atualizado",
+      "Preços corretos no momento da venda",
+      "Perfil completo do cliente",
+      "Políticas comerciais bem definidas"
+    ],
+    "link"  :"app",
+    "botao" :"Conheça o Força de Vendas",
+    "img"   :"app-forca-de-vendas"
+  },
+  {
+    "logo"  :"wms",
+    "titulo":"WMS WebMais",
+    "lista" : [
+      "Endereçamento inteligente do armazém",
+      "Menos erros na separação de pedidos",
+      "Inventário sem parar a operação",
+      "Giro correto por validade e entrada"
+    ],
+    "link"  :"wms",
+    "botao" :"Conheça o WMS",
+    "img"   :"wms-webmais"
+  }
+]

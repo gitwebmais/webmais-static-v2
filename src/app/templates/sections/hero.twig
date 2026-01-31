@@ -1,0 +1,58 @@
+{% set items = items ?? [
+  'Automações que fazem sua equipe produzir mais',
+  'Relatórios que mostram o que importa para decidir mais rápido',
+  'Pensado para a rotina real da indústria e da distribuição'
+] %}
+
+<section id="form" class="hero relative pt-15 pb-40 overflow-hidden">
+  <div class="container relative z-10">
+    <div class="flex flex-wrap items-center justify-between">
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-4xl md:text-7xl font-semibold text-primary mb-8">
+          <span class="text-white text-3xl md:text-5xl">Sistema ERP online</span><br>para indústrias e distribuidoras
+        </h1>
+
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 max-sm:mb-7">
+          {% for item in items %}
+          <div class="flex p-4 rounded-md bg-white/20">
+            <div>
+              <svg class="h-5 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.4 229.4">
+                <polygon points="229.4 0 196.3 0 196.3 0 0 0 0 32 174.7 32 .1 206.7 22.7 229.3 197.4 54.7 197.4 229.4 229.4 229.4 229.4 17.7 229.4 16 229.4 0" fill="#f2673c"/>
+              </svg>
+            </div>
+            <p class="text-white ms-3">{{ item }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="w-full lg:w-2/5 lg:px-10">
+
+        <div id="">
+          <div role="main" id="{{ page.hero.formId }}" data-rd-form></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<div class="hero-divider text-gray-100 overflow-hidden">
+  <svg
+    class="banner-header__bottom"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 54"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M1920 54H0V0h807.57c48.07 0 88.39 48.24 151.75 48.24s103.44-48.24 182.3-48.24h807.7v54Z"
+      fill="currentColor"
+    />
+    <path
+      class="hero-arrow-svg"
+      d="M962.15 29.18c-1.09 1.09-2.87 1.09-3.96 0l-11.2-11.2c-.8-.8-1.04-2-.6-3.05s1.45-1.73 2.59-1.73h22.39c1.13 0 2.15.68 2.59 1.73s.19 2.25-.6 3.05l-11.2 11.2h0Z"
+      fill="currentColor"
+    />
+  </svg>
+</div>
+
+</section>

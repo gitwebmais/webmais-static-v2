@@ -1,0 +1,19 @@
+<div class="grid grid-cols-2 gap-4">
+
+  <div>
+    {% include 'ui/flyout-button.twig' with {
+      link: links.parceiro.maisParceiros,
+      icon: 'prod:parceiros',
+      title: 'Conheça o programa Mais Parceiros'
+    } %}
+  </div>
+
+  <div>
+    {% include 'ui/flyout-button.twig' with {
+      link: links.parceiro.consultorParceiro,
+      icon: 'ui:search',
+      title: 'Encontre um Consultor Parceiro'
+    } %}
+  </div>
+  
+</div>

@@ -1,0 +1,130 @@
+###############################################
+# REDIRECIONAMENTOS DE DOMÍNIO
+###############################################
+RewriteEngine On
+
+# Redireciona www para sem www
+RewriteCond %{HTTP_HOST} ^www\.webmaissistemas\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://webmaissistemas.com.br/$1 [L,R=301]
+
+# Redirecionamentos específicos
+RewriteRule ^(indique-e-ganhe|indique-ganhe-marketplaces|indique-mais)/?$ /indique-ganhe-gestores/ [R=301,L]
+
+###############################################
+# REDIRECIONAMENTOS 301
+###############################################
+redirect 301 /estatisticas/clientes/ /parceiros/
+redirect 301 /revenda /parceiros/
+redirect 301 /clientes /parceiros/
+redirect 301 /gestao-de-vendas/planos /gestao-de-vendas/
+redirect 301 /modulos-erp/ /sistema-gestao-integrada/
+redirect 301 /gerenciador-financeiro/ /sistema-controle-financeiro/
+redirect 301 /gestao-de-producao/ /controle-de-producao/
+redirect 301 /gestao-de-clientes/ /crm-gestao-de-clientes/
+redirect 301 /software-industria-de-produtos-hospitalares/ /sistema-erp-produtos-medico-hospitalar/
+redirect 301 /sistema-erp-produtos-medico-hospitalar/ /sistema-erp-industria-produtos-medico-hospitalar/
+redirect 301 /blog/controle-de-estoque-domine-este-assunto/ /blog/controle-de-estoque/
+redirect 301 /segmentos/ /
+redirect 301 /segmentos /
+redirect 301 /blog/software-erp/ /blog/sistema-erp/
+redirect 301 /blog/mapeamento-de-processos/ /blog/gestao-de-processos/
+redirect 301 /software-industria-de-pre-moldados/ /sistema-erp-industria-pre-moldados/
+redirect 301 /sistema-erp/ /blog/
+redirect 301 /blog/como-um-software-em-nuvem-pode-reduzir-custos/ /blog/erp-na-nuvem/
+redirect 301 /blog/o-que-sao-erps/ /blog/sistema-erp/
+redirect 301 /blog/sistema-em-nuvem-mais-seguro/ /blog/erp-na-nuvem/
+redirect 301 /sistema-para-distribuidoras/ /sistema-erp-distribuidora/
+redirect 301 /blog/black-friday-2024 /blog/black-friday-2025/
+Redirect 301 /blog/por-que-o-controle-de-estoque-e-o-fluxo-de-materias-primas-sao-tao-importantes/ /blog/controle-de-estoque/
+Redirect 301 /blog/praticas-de-gestao-financeira/ /blog/gestao-financeira/
+Redirect 301 /blog/o-que-e-fluxo-de-caixa/ /blog/fluxo-caixa/
+Redirect 301 /blog/erros-controle-expedicao/ /blog/controle-de-expedicao-para-distribuidoras/
+Redirect 301 /blog/ineficiencia-na-gestao-estoque-o-que-voce-precisa-saber-para-resolver/ /blog/gestao-de-estoque/
+Redirect 301 /blog/boas-praticas-na-gestao-de-estoque/ /blog/gestao-de-estoque/
+Redirect 301 /blog/controle-de-estoque-para-distribuidoras/ /blog/controle-de-estoque/
+Redirect 301 /blog/passos-para-um-controle-de-estoque-eficaz/ /blog/controle-de-estoque/
+Redirect 301 /blog/controle-de-estoque-para-industrias/ /blog/controle-de-estoque/
+Redirect 301 /blog/gestao-de-vendas-para-industria/ /blog/gestao-de-vendas/
+Redirect 301 /blog/gestao-de-vendas-para-distribuidora/ /blog/gestao-de-vendas/
+Redirect 301 /blog/gerar-boletos/ /blog/boleto-bancario/
+Redirect 301 /blog/rotulos-de-alimentos/ /blog/rotulagem-de-alimentos/
+Redirect 301 /blog/sistema-de-controle-de-estoque/ /blog/software-controle-de-estoque/
+Redirect 301 /blog/emitir-e-atualizar-boleto-bancario/ /blog/boleto-bancario/
+Redirect 301 /blog/dicas-para-um-planejamento-comercial-eficaz/ /blog/planejamento-comercial/
+Redirect 301 /blog/empresa-familiar-como-formalizar-e-melhorar-a-gestao-2/ /blog/empresa-familiar/
+Redirect 301 /blog/notas-fiscais-como-evitar-problemas-na-emissao/ /blog/notas-fiscais/
+
+
+###############################################
+# OTIMIZAÇÕES DE DESEMPENHO
+###############################################
+# Compressão de arquivos
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/javascript application/rss+xml application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font application/x-font-opentype application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype application/x-font-ttf application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml application/xml application/json application/ld+json
+    AddOutputFilterByType DEFLATE font/opentype font/otf font/ttf image/svg+xml image/x-icon
+    AddOutputFilterByType DEFLATE text/css text/html text/javascript text/plain text/xml
+</IfModule>
+
+# Cache de arquivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "now plus 1 hour"
+    ExpiresByType text/css "now plus 1 month"
+    ExpiresByType application/javascript "now plus 1 week"
+    ExpiresByType application/x-javascript "now plus 1 week"
+    ExpiresByType image/png "now plus 6 months"
+    ExpiresByType image/jpeg "now plus 6 months"
+    ExpiresByType image/gif "now plus 6 months"
+    ExpiresByType image/svg+xml "now plus 6 months"
+    ExpiresByType image/x-icon "now plus 6 months"
+    ExpiresByType font/truetype "access plus 1 month"
+    ExpiresByType font/opentype "access plus 1 month"
+</IfModule>
+
+# Controle de cache
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|jpe?g|png|gif|swf|webp|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    <FilesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=3600, private, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+###############################################
+# SEGURANÇA E OTIMIZAÇÕES
+###############################################
+# Desativar o mod_pagespeed
+<IfModule pagespeed_module>
+    ModPagespeed off
+</IfModule>
+
+# Bloquear hotlinking de imagens
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?webmaissistemas\.com\.br [NC]
+RewriteCond %{HTTP_REFERER} !^https?://localhost(:[0-9]+)?/ [NC]
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?google\.[a-z]{2,4} [NC]
+RewriteCond %{HTTP_USER_AGENT} !Googlebot [NC]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteRule \.(jpg|jpeg|png|gif|svg|webp)$ - [F,NC]
+
+# Página de erro personalizada
+ErrorDocument 404 /404.php
+
+###############################################
+# CACHE LITESPEED
+###############################################
+<IfModule LiteSpeed>
+    CacheEnable public
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} ^GET|HEAD$
+    RewriteCond %{HTTP_HOST} ^sample\.com|sample\.net|sample\.org [NC]
+    RewriteCond %{REQUEST_URI} !login|admin|register|post|cron|.*\.(?:php|html?)$
+    RewriteCond %{QUERY_STRING} !nocache
+    RewriteRule .* - [E=Cache-Control:max-age=300]
+</IfModule>

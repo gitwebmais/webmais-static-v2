@@ -1,0 +1,21 @@
+<section class="bg-gray-100 py-10 md:py-20">
+  <div class="glide" data-glide data-config='{{ clients.config|json_encode|raw }}'>
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {% for client in clients.items %}
+        <li class="glide__slide">
+          <img
+            src="{{ images }}/clientes/{{ client.logo }}.svg"
+            alt="{{ client.logo }}"
+            title="{{ client.logo }}"
+            width="105"
+            height="60"
+            loading="lazy"
+            class="client-logo"
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

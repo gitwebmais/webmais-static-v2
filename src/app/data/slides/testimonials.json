@@ -1,0 +1,30 @@
+{
+"config": {
+  "type": "carousel",
+  "perView": 4,
+  "focusAt": "center",
+  "startAt": 1,
+  "gap": 10,
+  "breakpoints": {
+    "1024": { "perView": 3 },
+    "640": { "perView": 1 }
+    }
+},
+"items": [
+	{
+    "img"    : "politelas-branco",
+    "alt"     : "Logo Politelas",
+    "texto" : "“Desde a implementação, temos notado uma melhoria significativa na eficiência dos nossos processos internos.  O suporte da equipe tem sido excepcional. Sempre que encontramos alguma dúvida ou necessidade de ajuste, a resposta é rápida e eficaz.”"
+  },
+	{
+    "img"    : "gamma-crucis-branco",
+    "alt"     : "Logo Gamma Crucis",
+    "texto" : "“O sistema ERP atende às nossas necessidades com bom desempenho. A equipe de suporte é extremamente prestativa e solícita. Recomendamos este sistema para quaisquer empresas que desejam um produto profissional e de boa qualidade.”"
+  },
+	{
+    "img"    : "petrolinked-branco",
+    "alt"     : "Logo Petrolinked",
+    "texto" : "“O atendimento do suporte técnico e o nível dos treinamentos aplicados durante a implantação foram pontos positivos para a WebMais. Estamos muito satisfeitos com o resultado dessa virada de chave na nossa empresa através da implantação do ERP.”"
+  }
+]
+}

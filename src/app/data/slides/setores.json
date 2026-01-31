@@ -1,0 +1,64 @@
+{
+  "config": {
+    "type": "carousel",
+    "perView": 5,
+    "focusAt": "center",
+    "gap": 4,
+    "animationDuration": 600,
+    "revind": false,
+    "breakpoints": {
+      "1024": { "perView": 2 },
+      "640": { "perView": 1 }
+      }
+  },
+  "items": [
+    {
+      "icone"  : "compras",
+      "titulo" : "Módulo Compras",
+      "texto"  : "Maior controle no momento das compras",
+      "link"   : "compras"
+    },
+    {
+      "icone"  : "prod",
+      "titulo" : "Módulo Produção",
+      "texto"  : "Controle e otimize seu processo produtivo",
+      "link"   : "producao"
+    },
+    {
+      "icone"  : "estoque",
+      "titulo" : "Módulo Estoque",
+      "texto"  : "Facilite todos os processos do estoque",
+      "link"   : "estoque"
+    },
+    {
+      "icone"  : "vendas",
+      "titulo" : "Módulo Vendas",
+      "texto"  : "Todos os pedidos na palma da mão",
+      "link"   : "vendas"
+    },
+    {
+      "icone"  : "finance",
+      "titulo" : "Módulo Financeiro",
+      "texto"  : "Controle o dinheiro de forma automática e eficaz",
+      "link"   : "financeiro"
+    },
+    {
+      "icone"  : "comercial",
+      "titulo" : "Módulo Comercial",
+      "texto"  : "Controle total de todo seu processo de venda",
+      "link"   : "comercial"
+    },
+    {
+      "icone"  : "control",
+      "titulo" : "Controladoria",
+      "texto"  : "Tomada de decisões com assertividade",
+      "link"   : "controladoria"
+    },
+    {
+      "icone"  : "recursos",
+      "titulo" : "Recursos Gerais",
+      "texto"  : "Mantenha todas as informações centralizadas",
+      "link"   : "recursos"
+    }
+  ]
+}

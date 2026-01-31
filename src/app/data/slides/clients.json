@@ -1,0 +1,30 @@
+{
+"config": {
+  "type": "carousel",
+  "rewind": false,
+  "perView": 8,
+  "gap": 24,
+  "autoplay": 4000,
+  "breakpoints": {
+    "1024": { "perView": 3 },
+    "640": { "perView": 3, "gap":10 }
+    }
+  },
+  "items": [
+  { "name":"Irani Maggiore", "logo":"irani" },
+  { "name":"Moinho Paquetá", "logo":"moinho-paqueta" },
+  { "name":"Dejavu",         "logo":"dejavu" },
+  { "name":"Kailash",        "logo":"kailash" },
+  { "name":"Bufalíssima",    "logo":"bufalissima" },
+  { "name":"Sullack",        "logo":"sullack" },
+  { "name":"Príncipe",       "logo":"principe" },
+  { "name":"Pisafix",        "logo":"pisafix" },
+  { "name":"Bauermann",      "logo":"bauermann" },
+  { "name":"Pro Valle",      "logo":"provalle" },
+  { "name":"Face Beautiful", "logo":"face-beautiful" },
+  { "name":"Onixsul",        "logo":"onixsul" },
+  { "name":"Curaden",        "logo":"curaden" },
+  { "name":"Lci",            "logo":"lci" },
+  { "name":"Engex",          "logo":"engex" }
+  ]
+}

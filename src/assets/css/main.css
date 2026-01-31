@@ -1,0 +1,26 @@
+/* TAILWIND */
+@import "tailwindcss";
+
+/* BASE */
+@import "./base/fonts.css";
+@import "./base/theme.css";
+
+/* HELPERS */
+@import "./helpers/utilities.css";
+@import "./helpers/sprite.css";
+
+/* LAYOUT */
+@import "./layout/hero.css";
+@import "./layout/mobile-menu.css";
+
+/* VENDOR */
+@import "./vendor/glide.css";
+
+/* COMPONENTS */
+@import "./components/buttons.css";
+@import "./components/megamenu.css";
+@import "./components/texts.css";
+@import "./components/cards.css";
+
+/* ANIMATIONS */
+@import "./animations/animations.css";

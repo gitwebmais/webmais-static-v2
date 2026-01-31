@@ -1,0 +1,45 @@
+<section class="bg-secondary py-20">
+  <div class="container">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-semibold text-primary">
+        Gerencie todos os setores com o ERP WebMais!
+      </h2>
+    </div>
+
+    <!-- slide -->
+    <div class="md:mt-14">
+      <div
+        class="glide glide-cards-effect"
+        data-glide
+        data-config='{{ setores.config|json_encode|raw }}'
+      >
+      
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            {% for setor in setores.items %}
+              <li class="glide__slide py-10">
+                <div class="card md:w-64 text-center">
+                  <svg class="icon size-20 mb-5" data-icon="setor:{{ setor.icone }}"></svg>
+                  <h3 class="text-2xl font-semibold mb-2">{{ setor.titulo }}</h3>
+                  <p class="mb-3 text-sm">{{ setor.texto }}</p>
+                  <a class="btn btn-primary btn-sm" href="{{ links.funcionalidade[setor.link] }}">Saiba Mais</a>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          {% for setor in setores.items %}
+            <button
+              class="glide__bullet"
+              data-glide-dir="={{ loop.index0 }}"
+              aria-label="Slide {{ loop.index }}"
+            ></button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- end slide -->
+  </div>
+</section>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "^3.22",
+        "userfrosting/vite-php-twig": "^1.1"
+    }
+}

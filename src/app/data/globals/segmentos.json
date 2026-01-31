@@ -1,0 +1,18 @@
+[
+  {
+    "icone" : "M34,17.9962h-6v-5c0-.8468-1.0062-1.2964-1.65-.76l-5.35,4.59v-3.8299c0-.8367-1.0148-1.2894-1.65-.7601l-7,6c-.22.19-.35.47-.35.76v14c0,1.65,1.35,3,3,3h18c1.65,0,3-1.35,3-3v-13c0-1.1-.9-2-2-2ZM30,33.9962h-4v-6h4v6ZM34,32.9962c0,.55-.45,1-1,1h-1v-6c0-1.1-.9-2-2-2h-4c-1.1,0-2,.9-2,2v6h-9c-.55,0-1-.45-1-1v-13.54l5-4.29v3.83c0,.8485,1.0074,1.2955,1.65.7601l5.35-4.59v3.83c0,.55.45,1,1,1h7v13Z",
+    "imagem": "segmento-industria",
+    "titulo": "Indústria",
+    "texto" : "Gestão integrada do chão de fábrica ao financeiro, com controle de produção, custos e estoque em um único sistema. Mais previsibilidade, menos retrabalho e decisões baseadas em dados reais da operação.",
+    "botao" :"Conhecer ERP para indústria",
+    "link"  : "industrias"
+  },
+  {
+    "icone" : "M31.4483,12h-14.8966c-2.5159,0-4.5517,2.0359-4.5517,4.5517v14.8966c0,2.5159,2.0359,4.5517,4.5517,4.5517h14.8966c2.5159,0,4.5517-2.0359,4.5517-4.5517v-14.8966c0-2.5159-2.0359-4.5517-4.5517-4.5517ZM21.1034,14.4828h5.7931v3.7241c0,.2317-.1821.4138-.4138.4138h-4.9655c-.2317,0-.4138-.1821-.4138-.4138v-3.7241ZM33.5172,31.4483c0,1.1421-.9269,2.069-2.069,2.069h-14.8966c-1.1421,0-2.069-.9269-2.069-2.069v-14.8966c0-1.1421.9269-2.069,2.069-2.069h2.069v3.7241c0,1.589,1.3076,2.8966,2.8966,2.8966h4.9655c1.589,0,2.8966-1.3076,2.8966-2.8966v-3.7241h2.069c1.1421,0,2.069.9269,2.069,2.069v14.8966Z",
+    "imagem": "segmento-distribuidora",
+    "titulo": "Distribuidora",
+    "texto" : "Controle total de vendas, estoque e logística, com processos ágeis e informações centralizadas. Mais velocidade na operação, menos erros nos pedidos e maior margem em cada venda.",
+    "botao" :"Conhecer ERP para distribuidora",
+    "link"  : "distribuidoras"
+  }
+]

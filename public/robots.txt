@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /gerenciar/
+Disallow: /modelo/
+Disallow: /erp-nuvem/
+Disallow: /cliente/
+Disallow: /newsletter/*
+
+Disallow: /blog/app/languages/*
+Disallow: /blog/app/themes/
+Disallow: /blog/app/plugins/*
+
+Sitemap: https://webmaissistemas.com.br/sitemap.xml

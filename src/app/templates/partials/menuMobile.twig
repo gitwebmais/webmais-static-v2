@@ -1,0 +1,87 @@
+<!-- Overlay -->
+<div class="menu-overlay" data-menu-close></div>
+
+<!-- Menu -->
+<nav class="menu-mobile" aria-hidden="true">
+
+  <div class="ml-4 mb-4">
+    <a href="https://webmaissistemas.com.br" class="text-white font-bold text-xl">
+      <img src="{{ images }}/logos/logo-webmais-footer.svg" class="h-7" alt="WebMais Sistemas" title="WebMais Sistemas" width="130" height="28">
+    </a>
+  </div>
+
+  <ul class="menu-list">
+
+    <li class="has-submenu">
+      <button class="submenu-toggle">
+        Produtos
+        <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="{{ links.produto.industrias }}">Sistema para Indústria</a></li>
+        <li><a href="{{ links.produto.distribuidoras }}">Sistema para Distribuidora</a></li>
+        <li><a href="{{ links.produto.nfe }}">Sistema para NF-e</a></li>
+        <li><a href="{{ links.produto.app }}">Aplicativo Força de Vendas</a></li>
+        <li><a href="{{ links.produto.wms }}">WMS</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="{{ links.planos }}">Planos e Preços</a>
+    </li>
+
+    <li class="has-submenu">
+      <button class="submenu-toggle">
+        Funcionalidades
+        <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="{{ links.funcionalidade.compras }}">Módulo Compras</a></li>
+        <li><a href="{{ links.funcionalidade.producao }}">Módulo Produção</a></li>
+        <li><a href="{{ links.funcionalidade.estoque }}">Módulo Estoque</a></li>
+        <li><a href="{{ links.funcionalidade.vendas }}">Módulo Vendas</a></li>
+        <li><a href="{{ links.funcionalidade.financeiro }}">Módulo Financeiro</a></li>
+        <li><a href="{{ links.funcionalidade.comercial }}">Gestão Comercial</a></li>
+        <li><a href="{{ links.funcionalidade.controladoria }}">Módulo Controladoria</a></li>
+        <li><a href="{{ links.funcionalidade.recursos }}">Recursos Gerais</a></li>
+        <li><a href="{{ links.funcionalidade.integracoes }}">Integrações</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <button class="submenu-toggle">
+        Segmentos
+        <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="{{ links.segmento.industria }}">ERP para Indústria</a></li>
+        <li><a href="{{ links.segmento.distribuidora }}">ERP para Distribuidora</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="{{ links.blog }}">Blog</a>
+    </li>
+
+    <li class="has-submenu">
+      <button class="submenu-toggle">
+        Parceiros
+        <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="{{ links.parceiro.maisParceiros }}">Programa Mais Parceiros</a></li>
+        <li><a href="{{ links.parceiro.consultorParceiro }}">Consultores Parceiros</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="{{ links.contato }}">Contato</a>
+    </li>
+  </ul>
+  <div class="px-5 mt-10">
+    <a class="btn btn-primary" href="tel:+554835127777">
+      <svg class="icon size-5 mr-2 -mt-1" data-icon="ui:phone"></svg>
+      Para vendas
+    </a>
+  </div>
+</nav>

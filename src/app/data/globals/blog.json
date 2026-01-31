@@ -1,0 +1,20 @@
+[
+  {
+    "img"   :"frequencia-de-compra",
+    "titulo":"Frequência de Compra: estratégias para crescer",
+    "texto" :"Saiba porque acompanhar o comportamento de compra do cliente é importante para garantir o faturamento. Veja ainda 3 dicas práticas para aumentar as vendas",
+    "link"  :"https://webmaissistemas.com.br/blog/frequencia-de-compra/" 
+  },
+  {
+    "img"   :"indicadores-de-vendas",
+    "titulo":"Indicadores de Vendas: como medir e melhorar resultados",
+    "texto" :"Descubra o que são indicadores de vendas, porque é importante acompanhá-los e quais são as métricas essenciais que todo gestor deve acompanhar. Confira!",
+    "link"  :"https://webmaissistemas.com.br/blog/indicadores-de-vendas/" 
+  },
+  {
+    "img"   :"gestao-de-recursos",
+    "titulo":"Gestão de Recursos: como fazer na prática",
+    "texto" :"A gestão de recursos é uma das bases da eficiência operacional. Ela garante que pessoas, materiais, dinheiro e tecnologia sejam utilizados da melhor forma possível.",
+    "link"  :"https://webmaissistemas.com.br/blog/gestao-de-recursos/" 
+  }
+]

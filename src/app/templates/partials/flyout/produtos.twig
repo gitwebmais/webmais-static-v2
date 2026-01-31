@@ -1,0 +1,58 @@
+<div>
+  <div class="grid grid-cols-3 gap-2">
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.industrias,
+        icon: 'prod:ind',
+        title: 'ERP para indústria',
+        description: 'Mais autonomia com uma gestão completa e eficiente'
+      } %}
+    </div>
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.distribuidoras,
+        icon: 'prod:dist',
+        title: 'ERP para distribuidora',
+        description: 'Impulsione a gestão com um software especialista'
+      } %}
+    </div>
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.analytics,
+        icon: 'prod:analytics',
+        title: 'BI WebMais Analytics',
+        description: 'O Business Intelligence que oferece visão completa do seu negócio'
+      } %}
+    </div>
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.app,
+        icon: 'prod:app',
+        title: 'App Força de Vendas',
+        description: 'Potencialize as vendas externas de indústria e distribuidoras'
+      } %}
+    </div>
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.wms,
+        icon: 'prod:wms',
+        title: 'Sistema WMS',
+        description: 'Automatize operações e aumente sua produtividade'
+      } %}
+    </div>
+
+    <div>
+      {% include 'ui/flyout-button.twig' with {
+        link: links.produto.nfe,
+        icon: 'prod:nfe',
+        title: 'Sistema para NF-e',
+        description: 'Lançamento de NF-e totalmente on-line'
+      } %}
+    </div>
+    
+</div>

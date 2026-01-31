@@ -1,0 +1,11 @@
+@layer components {
+  .menu-button {
+    @apply cursor-pointer px-4 py-2 text-white hover:text-white/50 active:text-white/50 transition;
+  }
+  .flyout-content {
+    @apply bg-white rounded-xl shadow-xl px-14 py-11 w-max;
+  }
+}
+.is-active {
+  color: rgb(255 255 255 / 0.5);
+}

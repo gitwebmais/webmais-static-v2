@@ -1,0 +1,90 @@
+/* ===================================================== */
+/* Glide – Cards effect (escopado)                       */
+/* ===================================================== */
+
+.glide-cards-effect {
+  overflow: visible;
+}
+
+/* --------------------------------------------- */
+/* Estado base – slides distantes                */
+/* --------------------------------------------- */
+.glide-cards-effect .glide__slide {
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
+  opacity: 0.3;
+  transform: scale(0.8);
+  filter: blur(2px);
+  z-index: 1;
+}
+
+/* --------------------------------------------- */
+/* Slide ativo                                    */
+/* --------------------------------------------- */
+.glide-cards-effect .glide__slide--active {
+  opacity: 1;
+  transform: scale(1) translateY(-8px);
+  filter: blur(0);
+  z-index: 3;
+}
+
+/* sombra do card ativo */
+.glide-cards-effect .glide__slide--active .card {
+  box-shadow: 0px 0px 28px 5px rgba(242,102,60,0.5);
+}
+
+/* --------------------------------------------- */
+/* Slides vizinhos (direita e esquerda)           */
+/* --------------------------------------------- */
+
+/* vizinho da direita */
+.glide-cards-effect .glide__slide--active + .glide__slide {
+  opacity: 0.6;
+  transform: scale(0.9);
+  filter: blur(1px);
+  z-index: 2;
+}
+
+/* vizinho da esquerda */
+.glide-cards-effect
+  .glide__slide:has(+ .glide__slide--active) {
+  opacity: 0.6;
+  transform: scale(0.9);
+  filter: blur(1px);
+  z-index: 2;
+}
+
+/* --------------------------------------------- */
+/* Ajustes opcionais                              */
+/* --------------------------------------------- */
+
+/* desativar blur no mobile */
+@media (max-width: 640px) {
+  .glide-cards-effect .glide__slide {
+    filter: none;
+  }
+}
+
+/* bullets (opcional) */
+.glide-cards-effect .glide__bullets {
+  margin-top: 0;
+}
+
+.glide-cards-effect .glide__bullet {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.glide-cards-effect .glide__bullet--active {
+  background: #fff;
+}
+
+/* card visual */
+.glide-cards-effect .glide__slide .card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  height: 100%;
+  transition: box-shadow 0.5s ease;
+}

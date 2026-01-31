@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <!-- Head -->
+  {% include 'partials/head.twig' %}
+
+</head>
+
+<body>
+
+  <!-- GTM -->
+  {% include 'components/gtm.twig' with {'part': 'body'} %}
+
+  <main id="page">
+
+    <!-- Header -->
+    {% include 'partials/header.twig' %}
+
+    <div id="content">
+
+    <!-- Content -->
+    {% block content %}{% endblock %}
+
+    </div>
+
+    <!-- Footer -->
+    {% include 'partials/footer.twig' %}
+
+  </main>
+
+  <!-- Menu mobile -->
+  {% include 'partials/menuMobile.twig' %}
+
+  <!-- Scripts -->
+  {% include 'partials/commonFooter.twig' %}
+
+</body>
+</html>

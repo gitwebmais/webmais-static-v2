@@ -1,0 +1,73 @@
+[
+  {
+    "pergunta":"Para quem é o ERP WebMais?",
+    "resposta": [
+      {
+        "tipo":"paragrafo",
+        "texto":"O ERP WebMais é ideal para indústrias e distribuidoras de pequeno e médio porte que buscam gestão integrada, controle de processos e escalabilidade."
+      },
+      {
+        "tipo":"lista",
+        "itens" : [
+          "Pequenas empresas: organizar processos essenciais e ter controle simplificado",
+          "Médias empresas: automatizar rotinas, integrar setores e ter informações estratégicas em tempo real"
+          ]
+      },
+      {
+        "tipo":"paragrafo",
+        "texto":"Em resumo, o ERP WebMais ajuda empresas de pequeno e médio porte a centralizar dados, ganhar eficiência e crescer com segurança."
+      }
+    ]
+  },
+  {
+    "pergunta":"Como funciona a implantação do ERP WebMais?",
+    "resposta": [
+      {
+        "tipo":"paragrafo",
+        "texto":"A implantação do ERP WebMais é realizada por um time especializado e pode acontecer de forma presencial ou online, conforme a necessidade da empresa."
+      },
+      {
+        "tipo":"paragrafo",
+        "texto":"Antes de iniciar, fazemos o mapeamento dos processos mais importantes da operação, entendendo a rotina do cliente. A partir disso, a implantação é conduzida de forma priorizada, garantindo que o sistema comece a ser usado corretamente desde o início, focando no que realmente impacta o dia a dia do negócio."
+      }
+    ]
+  },
+  {
+    "pergunta":"O sistema suporta o crescimento da empresa?",
+    "resposta": [
+      {
+        "tipo":"paragrafo",
+        "texto":"O ERP WebMais evolui junto com sua operação. Nosso sistema acompanha o crescimento da empresa, adaptando processos, integrando setores e mantendo dados sempre atualizados para decisões mais estratégicas."
+      },
+      {
+        "tipo":"paragrafo",
+        "texto":"Para atender diferentes estágios de maturidade empresarial, disponibilizamos planos flexíveis e escaláveis:"
+      },
+      {
+        "tipo":"lista",
+        "itens" : [
+          "WebFit – pensado para pequenas empresas que buscam otimizar processos essenciais;",
+          "Plus/Pro – ideal para empresas em expansão, oferecendo maior integração e automação;",
+          "Ultra – voltado para negócios estruturados, que buscam controle avançado, análise estratégica e vantagem competitiva sustentável."
+          ]
+      }
+    ]
+  },
+  {
+    "pergunta":"Como é cobrado o uso do Sistema ERP WebMais?",
+    "resposta": [
+      {
+        "tipo":"paragrafo",
+        "texto":"A precificação do ERP WebMais é transparente e sem surpresas. Nosso sistema é vendido completo, permitindo integrar toda a empresa desde o plano mais básico até o mais avançado, sem módulos adicionais obrigatórios."
+      },
+      {
+        "tipo":"paragrafo",
+        "texto":"Não cobramos percentual sobre faturamento: você paga apenas o custo mensal do sistema e o custo de implantação, calculado por horas de serviço."
+      },
+      {
+        "tipo":"paragrafo",
+        "texto":"Para conhecer todos os detalhes sobre os planos, valores e recursos de cada opção, você pode acessar a [página de preços do ERP WebMais]."
+      }
+    ]
+  }
+]

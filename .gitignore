@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+public/build/
+dist/
+
+# PHP / Composer
+vendor/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Cache / Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

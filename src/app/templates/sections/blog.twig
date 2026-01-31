@@ -1,0 +1,38 @@
+<section class="bg-gray-100 pt-10 pb-28 md:pt-28">
+  <div class="container">
+    <h2 class="titulo mb-20">Outros gestores também costumam ler</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      {% for blog in blogs %}
+      <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xs">
+        <img
+          src="{{ images }}/layout/{{ blog.img }}.webp"
+          alt="{{ blog.titulo }}"
+          title="{{ blog.titulo }}"
+          class="h-56 w-full object-cover"
+          loading="lazy"
+          width="462"
+          height="224"
+        >
+
+        <div class="p-4 sm:p-6">
+          <a href="#">
+            <h3 class="text-xl font-semibold text-gray-900">
+              {{ blog.titulo }}
+            </h3>
+          </a>
+
+          <a href="{{ blog.link }}" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
+            Leia o artigo
+
+            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+              →
+            </span>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

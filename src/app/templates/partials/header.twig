@@ -1,0 +1,94 @@
+<header id="header" data-header class="fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-primary">
+  <div class="container mx-auto px-6">
+    <nav class="flex items-center justify-between h-20 relative">
+
+      {# Logo #}
+      <a href="/" class="text-white font-bold text-xl">
+        <img src="{{ images }}/logos/logo-webmais-header.svg" class="h-15" alt="WebMais Sistemas" title="WebMais Sistemas" width="185" height="60">
+      </a>
+
+      {# Menu #}
+      <ul class="md:flex items-center hidden">
+
+        {# Segmentos #}
+        <li class="">
+          <button data-flyout-trigger data-flyout="segmentos" class="menu-button group">
+            Segmentos
+            <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+          </button>
+          <div data-flyout-content="segmentos" class="flyout hidden absolute left-1/2 transform -translate-x-1/2 top-20">
+            <div class="flyout-content">
+              {% include 'partials/flyout/segmentos.twig' %}
+            </div>
+          </div>
+        </li>
+
+        {# Funcionalidades #}
+        <li class="">
+          <button data-flyout-trigger data-flyout="funcionalidades" class="menu-button group">
+            Funcionalidades
+            <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+          </button>
+          <div data-flyout-content="funcionalidades" class="flyout hidden absolute left-1/2 transform -translate-x-1/2 top-20" >
+            <div class="flyout-content max-w-5xl">
+              {% include 'partials/flyout/funcionalidades.twig' %}
+            </div>
+          </div>
+        </li>
+
+        {# Produtos #}
+        <li class="">
+          <button data-flyout-trigger data-flyout="produtos" class="menu-button group">
+            Produtos
+            <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+          </button>
+          <div data-flyout-content="produtos" class="flyout hidden absolute left-1/2 transform -translate-x-1/2 top-20" >
+            <div class="flyout-content max-w-6xl">
+              {% include 'partials/flyout/produtos.twig' %}
+            </div>
+          </div>
+        </li>
+
+        {# Parceiro #}
+        <li class="relative">
+          <button data-flyout-trigger data-flyout="parceiros" class="menu-button group">
+            Parceiros
+            <svg class="icon size-4" data-icon="ui:chevron-down"></svg>
+          </button>
+          <div data-flyout-content="parceiros" class="flyout hidden absolute left-1/2 transform -translate-x-1/2 top-15" >
+            <div class="flyout-content max-w-2xl p-5">
+              {% include 'partials/flyout/parceiros.twig' %}
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="{{ links.planos }}" class="menu-button">Preços</a>
+        </li>
+
+        <li>
+          <a href="{{ links.blog }}" class="menu-button">Blog</a>
+        </li>
+
+        <li>
+          <a href="{{ links.contato }}" class="menu-button">Contato</a>
+        </li>
+
+      </ul>
+
+      <div class="max-sm:hidden">
+        <a class="btn bg-primary-hover text-white hover:bg-primary-hover/70 transition-all" href="tel:+554835127777">
+          <svg class="icon size-5 mr-2 -mt-1" data-icon="ui:phone"></svg>
+          Para vendas
+        </a>
+      </div>
+
+      <!-- Botão do menu mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg class="icon size-7 text-white" data-icon="ui:menu"></svg>
+      </button>
+      
+    </nav>
+    
+  </div>
+</header>

@@ -1,0 +1,6 @@
+<a class="btn btn-primary {{ class ?? "" }}" href="{{ link ?? "#form" }}">
+  {{ text ?? "Quero uma demonstração" }}
+  {% if showIcon ?? false %}
+    <svg class="icon size-4 ml-1 text-white" data-icon="ui:arrow-right"></svg>
+  {% endif %}
+</a>

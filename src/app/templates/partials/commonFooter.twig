@@ -1,0 +1,35 @@
+{{ vite_js('src/assets/js/main.js') }}
+<!-- RD Station form -->
+<script>
+  const target = document.querySelector('[data-rd-form]');
+
+  if (target) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      if (entries[0].isIntersecting) {
+        loadRDForm();
+        obs.disconnect();
+      }
+    });
+
+    observer.observe(target);
+  }
+
+  function loadRDForm() {
+    if (window.RDStationForms) {
+      initRD();
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
+    script.onload = initRD;
+    document.body.appendChild(script);
+  }
+
+  function initRD() {
+    new RDStationForms('{{ page.hero.formId }}', 'UA-43092956-1').createForm();
+  }
+</script>
+
+<!-- RD Station scripts -->
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/7d1e45b8-eef1-482c-a5c7-7d86432eb02a-loader.js" ></script>
