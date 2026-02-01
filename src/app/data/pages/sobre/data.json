@@ -1,0 +1,8 @@
+{
+  "type": "institucional",
+  "layout": "site",
+
+  "sections": [
+    { "template": "faq" }
+  ]
+}

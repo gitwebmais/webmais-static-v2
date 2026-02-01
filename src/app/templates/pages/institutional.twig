@@ -1,0 +1,14 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+
+  {% if page.sections is defined %}
+    {% for section in page.sections %}
+      {% include "sections/" ~ section.template ~ ".twig" with {
+        section: section,
+        page: page
+      } %}
+    {% endfor %}
+  {% endif %}
+
+{% endblock %}

@@ -1,5 +1,21 @@
 {
-"hero": {
-  "formId": "cta-pagina-inicial-0b33b2ad09702483c335"
-  }
+  "type": "institucional",
+  "layout": "site",
+  "formId": "cta-pagina-inicial-0b33b2ad09702483c335",
+
+  "sections": [
+    { "template": "hero"},
+    { "template": "logos" },
+    { "template": "video" },
+    { "template": "segmentos" },
+    { "template": "ferramentas" },
+    { "template": "testimonials" },
+    { "template": "integracoes" },
+    { "template": "erp-online" },
+    { "template": "setores" },
+    { "template": "numeros" },
+    { "template": "cta" },
+    { "template": "blog" },
+    { "template": "faq" }
+  ]
 }
