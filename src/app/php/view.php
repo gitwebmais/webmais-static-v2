@@ -11,31 +11,57 @@ use UserFrosting\ViteTwig\ViteTwigExtension;
 
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
-use Twig\TwigFunction;
 
+// =====================================================
+// AMBIENTE
+// =====================================================
 
-$devEnabled = true; // Mude para true no desenvolvimento
+// true no local, false na hospedagem
+$devEnabled = ($_SERVER['HTTP_HOST'] === 'localhost:8000');
+
+// webroot real (public no local, www na hospedagem)
+$documentRoot = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+
+// =====================================================
+// VITE
+// =====================================================
+
+// onde o build fica publicamente
+$buildPublicPath = '/build';
+
+// caminho real do manifest (SEM hardcode de public)
+$manifestPath = $documentRoot . $buildPublicPath . '/.vite/manifest.json';
 
 $manifest = new ViteManifest(
     devEnabled: $devEnabled,
-    manifestPath: __DIR__ . '/../../../public/build/.vite/manifest.json',
+    manifestPath: $manifestPath,
     serverUrl: 'http://localhost:5173/',
-    // Aqui está a chave: se não for dev, o basePath PRECISA ser /build/
-    // para que o HTML final fique <script src="/build/assets/main.js">
-    basePath: $devEnabled ? '' : '/build/', 
+    basePath: $devEnabled ? '' : $buildPublicPath . '/',
 );
 
-$extension = new ViteTwigExtension($manifest);
+$twigVite = new ViteTwigExtension($manifest);
 
-// loader aponta para onde ficam os templates
+// =====================================================
+// TWIG
+// =====================================================
+
+// templates sempre relativos ao src
 $loader = new FilesystemLoader(__DIR__ . '/../templates');
-$twig = new Environment($loader, [
-    'cache' => false, // depois você pode ativar
-]);
-$twig->addExtension($extension);
 
-// variáveis globais
-$twig->addGlobal('images', 'dist/images');
+$twig = new Environment($loader, [
+    'cache' => false, // pode ativar depois
+]);
+
+$twig->addExtension($twigVite);
+
+// =====================================================
+// VARIÁVEIS GLOBAIS
+// =====================================================
+
+// caminhos públicos
+$twig->addGlobal('images', '/dist/images');
+
+// links
 $twig->addGlobal('links', loadGlobalLinks());
 
 // dados JSON
@@ -51,16 +77,21 @@ $twig->addGlobal('clients', loadSlider('clients'));
 $twig->addGlobal('testimonials', loadSlider('testimonials'));
 $twig->addGlobal('setores', loadSlider('setores'));
 
+// =====================================================
 // GTM
-// Define se o ambiente é produção (ajuste a URL para a sua)
+// =====================================================
+
 $isProduction = ($_SERVER['HTTP_HOST'] === 'webmaissistemas.com.br');
+
 $twig->addGlobal('is_production', $isProduction);
 $twig->addGlobal('gtm_id', 'GTM-K5ZVS8N');
 
-// função de renderização
+// =====================================================
+// FUNÇÃO DE RENDER
+// =====================================================
+
 function view(string $template, array $data = [])
 {
     global $twig;
-
     echo $twig->render($template, $data);
 }
